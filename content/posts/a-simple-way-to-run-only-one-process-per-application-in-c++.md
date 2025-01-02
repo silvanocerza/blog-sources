@@ -7,7 +7,7 @@ tags = ["C++"]
 
 Some times it might be necessary to limit the number of processes running at the same time for a certain application. There might be several reasons for this, to prevent data corruption for example. This is a simple cross-platform way to do it.
 
-!---!
+---
 
 We're going to use C++ 17 and the new [filesystem library](https://en.cppreference.com/w/cpp/filesystem), this will permit us to minimize the use of `ifdef` since we won't have to use the POSIX or Windows APIs that much.
 
