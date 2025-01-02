@@ -9,6 +9,8 @@ Some times it might be necessary to limit the number of processes running at the
 
 ---
 
+![placeholder-image](./foo/test.png)
+
 We're going to use C++ 17 and the new [filesystem library](https://en.cppreference.com/w/cpp/filesystem), this will permit us to minimize the use of `ifdef` since we won't have to use the POSIX or Windows APIs that much.
 
 Our solution will work roughly like this:
