@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Curl
-        run: curl -X POST ${{ secrests.VERCEL_DEPLOY_HOOK }}
+        run: curl -X POST ${{ secrets.VERCEL_DEPLOY_HOOK }}
