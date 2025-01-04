@@ -5,9 +5,26 @@ Hey! I'm Silvano Cerza, a software engineer from Italy.
 This is my personal website where I share posts and thoughts mainly related to software development.
 Though I touch different topics from time to time.
 
-## Subscribe
+## Atom feeds
 
-You can subscribe to my Atom feed [here](https://silvanocerza.com/atom/all),
+The main feed combines blog posts and thoughts, small form posts basically.
+You can subscribe to that with:
+
+```
+https://silvanocerza.com/atom/all
+```
+
+If you just want to follow blog posts, you can subscribe to:
+
+```
+https://silvanocerza.com/atom/blog
+```
+
+Same for only thoughts:
+
+```
+https://silvanocerza.com/atom/thoughts
+```
 
 ## Mastodon and Bluesky
 
