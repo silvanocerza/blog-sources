@@ -1,6 +1,6 @@
 # Personal blog sources
 
-This repo contains the sources of my [personal blog](silvanocerza.com).
+This repo contains the sources of my [personal blog](https://silvanocerza.com).
 
 Code is in [another repo](https://github.com/silvanocerza/personal-site).
 
