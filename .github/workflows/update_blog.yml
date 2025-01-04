@@ -1,0 +1,11 @@
+name: Update blog
+on:
+  push:
+    branches:
+      - main
+jobs:
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl
+        run: curl -X POST ${{ secrests.VERCEL_DEPLOY_HOOK }}
