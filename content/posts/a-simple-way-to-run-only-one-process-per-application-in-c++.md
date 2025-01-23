@@ -1,9 +1,9 @@
-+++
-title = "A simple way to run only one process per application in C++"
-date = "2019-04-10T17:51:49+02:00"
-
-tags = ["C++"]
-+++
+---
+title: A simple way to run only one process per application in C++
+date: 2019-04-10T17:51:49+02:00
+tags:
+  - cpp
+---
 
 Some times it might be necessary to limit the number of processes running at the same time for a certain application. There might be several reasons for this, to prevent data corruption for example. This is a simple cross-platform way to do it.
 
