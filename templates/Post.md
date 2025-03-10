@@ -1,7 +1,6 @@
 ---
 title: "{{title}}"
-date:
-  "{ date:YYYY-MM-DD:HH:mm:ssZ }": 
+date: "{{date:YYYY-MM-DDTHH:mm:SSZ}}"
 tags: 
 draft: true
 ---

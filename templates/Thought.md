@@ -1,6 +1,5 @@
 ---
-date:
-  "{ date:YYYY-MM-DD:HH:mm:ssZ }": 
 tags: 
+date: "{{date:YYYY-MM-DDTHH:mm:SSZ}}"
 draft: true
 ---
