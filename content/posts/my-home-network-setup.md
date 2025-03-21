@@ -12,14 +12,14 @@ I have a small PC at home that I use as a server to run some [personal services]
 ---
 
 One of the things that always bothered me about running a server in my network is having to use the IP and port to access this or that service. So when I first set everything up, I had to find a solution to access each service using a different URL. After some searching and thinking I came up with a solution that satisfies me quite nicely.
-### Equipment
+# Equipment
 
 I'm using a [Flint 2](https://www.gl-inet.com/products/gl-mt6000/) as my router, this gives me the chance to do some funky stuff in my network. It can easily run [AdGuard Home](https://adguard.com/en/adguard-home/overview.html) to filter ads network wide, since it acts as a DNS server I can also rewrite some DNS queries. I can also run a [WireGuard](https://www.wireguard.com/) server and/or client with ease, this is especially helpful to access my LAN when not at home.
 
 The actual server is a [Minisforum NAB6](https://www.minisforum.com/products/minisforum-nab6-nab9-nab6-lite-nab7-amz?variant=49516388778290) with an Intel i7-12650H CPU, 32GB RAM and 1 TB SSD. It's small enough that can fit anywhere, and powerful enough to handle 4K movies and multiple containers at the same time. It also has a couple of 2.5G ethernet ports, enough USB ports to plug extra peripherals like a Zigbee antenna, or extra storage. It was also quite cheap at around 500 Euro.
 
 This is all the hardware I use to manage efficiently my LAN.
-### Domains
+# Domains
 
 I find it EXTREMELY annoying having to write the server IP every time I want to access it, so my top priority was using a custom domain.
 
@@ -42,7 +42,7 @@ Though there is two-letter `.it` domain in the wild. The company bought it early
 Some people might wrinkle their nose at this choice. Why not use one of the [reserved TLDs](https://en.wikipedia.org/wiki/Top-level_domain#Reserved_domains) like `.local` or `.internal`? I indeed took them into consideration, but all of them are quite long, and I want a short URL. The only usable one would have been `.internal` as all the others have actual uses, `.local` is used for mDNS as an example.
 
 All in all the choice I made works for the time being as I know it won't cause any clashes. This also ties really nicely with the way I set up my services.
-### Services
+# Services
 
 To run my services I decided to have a bunch of Docker compose files, each named after the service it defines. So Sonarr will be in `sonarr.yml`, QBitTorrent will be `qbittorrent.yml` and so on.
 
@@ -146,7 +146,7 @@ By default no service ports are exposed to Traefik, so we must declare which one
 
 This is just one of the services I defined, to see more examples checkout [this repo](https://github.com/silvanocerza/personal-services).
 
-### Outside access
+# Outside access
 
 Obviously these services become really useful when I can access them wherever I am, even though I'm mostly at home. So I needed some way to made the LAN available from my mobile devices, mainly my iPhone and MacBook.
 
@@ -159,7 +159,7 @@ As I said above my router can run both a WireGuard server and client with no iss
 A cool thing of this approach is that if in the future I want to build my own private VPN that exits from nodes around the world I can. I'll have to get some machines from AWS, GCP or Azure — probably not lol — scattered around the world and use them as WireGuard servers, while my Flint 2 acts as a single client. For the time being I can rely on existing VPNs if necessary.
 
 The annoying thing though, is that I must use a static IP. I took into consideration [Dynamic DNS](https://en.wikipedia.org/wiki/Dynamic_DNS) but I'm under that beautiful thing that is [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) so it doesn't work reliably with WireGuard and I was forced to use a static IP. Luckily the process to ask for one from my ISP is automated and took no time to do so. The main downside is that now I need to be careful not to leak it, because probably it's a pain in the ass to change it.
-### SSL
+# SSL
 
 You might have noticed I never mentioned SSL anywhere, simply because I'm not using it. All the services are accessible only if you have access to my LAN, so I feel comfortable doing without SSL in this case. If you already have access to my LAN I'm already done for in any case.
 
@@ -167,7 +167,7 @@ There's also the issue of generating certificates for the domains I'm using, sin
 
 It's obviously feasible to create SSL certificates for your LAN but that requires some extra work that I don't want to bother with, so for the time being I decided to ignore this. If in the future I'll need to expose some services I'll probably use my domain `silvanocerza.com` to make them available.
 
-### Home Assistant problems
+# Home Assistant problems
 
 Recently I also added [Home Assistant](https://www.home-assistant.io/) to my services, since it likes to run using the host network I had some issues routing requests to its container with Traefik and it required some extra care.
 
@@ -244,7 +244,7 @@ server {
 
 This is a pretty minimal setup for Nginx with some extras for Home Assistant but it does the trick and solve the routing issue. Between the different possible solutions that I took into consideration, like using only the network hosts for all my services, this is the one that seems the cleanest and satisfies me the most.
 
-### Future improvements
+# Future improvements
 
 This is the current setup, though I already have some ideas to improve it. 
 
