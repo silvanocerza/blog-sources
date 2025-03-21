@@ -5,6 +5,7 @@ tags:
   - networking
   - home-server
   - self-hosting
+  - docker
 draft: false
 ---
 I have a small PC at home that I use as a server to run some [personal services](https://github.com/silvanocerza/personal-services) of mine, Jellyfin, Sonarr, QBitTorrent, and others. This is an outline of the current setup and some of the problems I faced.
