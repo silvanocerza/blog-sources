@@ -243,7 +243,18 @@ server {
 }
 ```
 
-This is a pretty minimal setup for Nginx with some extras for Home Assistant but it does the trick and solve the routing issue. Between the different possible solutions that I took into consideration, like using only the network hosts for all my services, this is the one that seems the cleanest and satisfies me the most.
+This is a pretty minimal setup for Nginx with some extras for Home Assistant but it does the trick and solve the routing issue. 
+
+Last but not least you must add this to your Home Assistant `configuration.yaml`, this authorises connections coming from the Nginx proxy and the rest of the Docker network. To find the correct I used `docker network inspect traefik-net`.
+
+```configuration.yaml
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.18.0.0/16
+```
+
+Between the different possible solutions that I took into consideration, like using only the network hosts for all my services, this is the one that seems the cleanest and satisfies me the most.
 
 # Future improvements
 
