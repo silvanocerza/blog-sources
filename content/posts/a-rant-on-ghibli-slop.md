@@ -32,7 +32,7 @@ Those people are sharing the Ghibli styled slop.
 
 This made me think deeply about their actions and how it affects the world around them too. How can they build something disruptive, something completely new, something that will shake existing industries if they can't even bother with sharing original images with their writings. Are they even writing what they're sharing? 
 
-Is they're writing actually theirs? Writing is an amazing tool for me, it helps me reason about problems by putting things in order, it helps me share with thoughts with other people. It means me to a lot because I believe in what I write, everything you're reading here has been thought and written by me. 
+Is they're writing actually theirs? Writing is an amazing tool for me, it helps me reason about problems by putting things in order, it helps me share with thoughts with other people. It means a lot to me because I believe in what I write, everything you're reading here has been thought and written by me. 
 
 I do use AI though, as an editor and a final proofreader. English is not my main language, I make mistakes some times, so it's good to have a kind of editors that might find this or that grammatical error. But that's it, the rest is all mine.
 
