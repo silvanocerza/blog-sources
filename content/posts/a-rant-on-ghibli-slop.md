@@ -13,6 +13,8 @@ These past week OpenAI released their new image generation model, indeed amazing
 
 Quickly people started generating slop upon slop of Studio Ghibli styled images. 
 
+![Angry Princess Mononoke](./images/angry-princess-mononoke.jpg)
+
 ---
 
 All my socials where flooded with these images. Instagram was full of memes but Ghibli style basically adding no content to that. People were sharing their memories Ghibli style, again, adding no substance to those memories. 
