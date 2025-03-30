@@ -8,7 +8,7 @@ tags:
   - "#ai"
 draft: false
 ---
-I started writing this as a simple though, it quickly evolved into a rant of sort.
+I started writing this as a simple thought, it quickly evolved into a rant of sort.
 
 These past week OpenAI released their new image generation model, indeed amazing stuff, it can create and reason about images in way that classic diffusion models really can't.
 
