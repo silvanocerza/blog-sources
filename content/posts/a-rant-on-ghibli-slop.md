@@ -5,6 +5,7 @@ tags:
   - ghibli
   - slop
   - rant
+  - "#ai"
 draft: false
 ---
 I started writing this as a simple though, it quickly evolved into a rant of sort.
