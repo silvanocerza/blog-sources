@@ -11,7 +11,7 @@ draft: false
 
 Stupid Safari and iOS forcing me to do this to copy text to clipboard. 😩
 
-```
+```typescript
 export async function copyToClipboard(text: string) {
   try {
     await navigator.clipboard.writeText(text);
